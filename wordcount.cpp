@@ -9,7 +9,7 @@
  * References:
  *StackOverflow
  *Cpp forums
- *upperclassmen and friends
+ *upperclassmen
  * Finally, please indicate approximately how many hours you spent on this:
  * #hours:
  */
