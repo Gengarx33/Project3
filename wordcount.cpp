@@ -10,7 +10,7 @@
  *
  *
  * Finally, please indicate approximately how many hours you spent on this:
- * #hours: 
+ * #hours:
  */
 
 #include <iostream>
@@ -27,5 +27,12 @@ unsigned long countWords(const string& s, set<string>& wl);
 
 int main()
 {
+  string line;
+ int numberlines = 0;
+ while(getline(cin,line()) {
+
+  numberlines++;
+  cout << "Number of lines" << numberlines << endl;
+
 	return 0;
 }
