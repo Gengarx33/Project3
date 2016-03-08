@@ -9,6 +9,11 @@
  * References:
  *
  *
+=======
+ *StackOverflow
+ *Cpp forums
+ *upperclassmen and friends
+>>>>>>> a47eb45e04eae6840a3a05859f1152d587c1d218
  * Finally, please indicate approximately how many hours you spent on this:
  * #hours:
  */
@@ -28,11 +33,14 @@ unsigned long countWords(const string& s, set<string>& wl);
 int main()
 {
   string line;
- int numberlines = 0;
- while(getline(cin,line()) {
 
-  numberlines++;
-  cout << "Number of lines" << numberlines << endl;
+ int numlines = 0;
+ int numchar = 0;
+ while(getline(cin,line)) {
+  numlines++;
+  cout << "Number of lines" << numlines << endl;
+  numchar += line.length;
+  cout << "Number of characters" << numchar << endl;
 
   return 0;
 }
