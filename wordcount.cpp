@@ -7,7 +7,6 @@
  * NOT mean it is okay to COPY THAT SOURCE.  What you submit here **MUST BE
  * YOUR OWN WORK**.
  * References:
-<<<<<<< HEAD
  *
  *
 =======
