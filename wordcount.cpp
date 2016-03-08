@@ -7,13 +7,11 @@
  * NOT mean it is okay to COPY THAT SOURCE.  What you submit here **MUST BE
  * YOUR OWN WORK**.
  * References:
- *StackOverflow
- *Cpp forums
- *upperclassmen
+ *
+ *
  * Finally, please indicate approximately how many hours you spent on this:
  * #hours:
  */
-*/
 
 #include <iostream>
 using std::cin;
@@ -31,11 +29,10 @@ int main()
 {
   string line;
  int numberlines = 0;
+ while(getline(cin,line()) {
 
- while(getline(cin,line)) {
   numberlines++;
   cout << "Number of lines" << numberlines << endl;
- }
 
 	return 0;
- }
+}
