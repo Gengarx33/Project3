@@ -34,5 +34,5 @@ int main()
   numberlines++;
   cout << "Number of lines" << numberlines << endl;
 
-	return 0;
+  return 0;
 }
