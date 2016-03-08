@@ -30,11 +30,11 @@ int main()
 {
   string line;
  int numberlines = 0;
- while(getline(cin,line())) {
 
+ while(getline(cin,line)) {
   numberlines++;
   cout << "Number of lines" << numberlines << endl;
+ }
 
 	return 0;
  }
-}
