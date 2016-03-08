@@ -9,10 +9,11 @@
  * References:
  *StackOverflow
  *Cpp forums
- *upperclassmen
+ *upperclassmen and friends
  * Finally, please indicate approximately how many hours you spent on this:
  * #hours:
  */
+*/
 
 #include <iostream>
 using std::cin;
