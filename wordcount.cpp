@@ -28,11 +28,14 @@ unsigned long countWords(const string& s, set<string>& wl);
 int main()
 {
   string line;
- int numberlines = 0;
+ int numlines = 0;
+ int numchar = 0;
  while(getline(cin,line)) {
+  numlines++;
+  cout << "Number of lines" << numlines << endl;
+  numchar += line.length;
+  cout << "Number of characters" << numchar << endl;
 
-  numberlines++;
-  cout << "Number of lines" << numberlines << endl;
  }
 
 	return 0;
