@@ -47,8 +47,8 @@ int main()
  }
 
  set <string> line //gettting a set for the lines
- lines.insert(lines); //insert lines to a set
- lines.size ();
+ line.insert(line); //insert lines to a set
+ line.size ();
 
 
   return 0;
