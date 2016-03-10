@@ -38,9 +38,9 @@ int main()
  int numchar = 0;
  while(getline(cin,line)) {
   numlines++;
-  cout << "Number of lines" << numlines << endl;
+  cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length;
-  cout << "Number of characters" << numchar << endl;
+  cout << "Number of characters " << numchar << endl; //number of characters in each line
 
   return 0;
 }
