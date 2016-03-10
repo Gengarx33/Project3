@@ -24,33 +24,38 @@ using std::string;
 #include <set>
 using std::set;
 
-// write this function to help you out with the computation.
-unsigned long countWords(const string& s, set<string>& wl);
+// write this function to help you out with the computation.VVVV
+//unsigned long countWords(const string& s, set<string>& wl);
 
 int main()
 {
  string line;
  int numlines = 0;
- set <string> lines //gettting a set for the lines
- int numchar = 0;
- int unqlines = 0
+
+
+ int unqlines = 0;
  int numwords = 0;
 
 
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
-  numlines++; //increments the # of lines everytime it loops
+  int numchar = 0;
+  ++numlines; //increments the # of lines everytime it loops
 
   cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length(); //counts the characters in each line
   cout << "Number of characters " << numchar << endl; //number of characters in each line
+ }
 
+ // dont touch pls
+ /*set <string> lines //gettting a set for the lines
   lines.insert(lines); //insert lines to a set
   set <string> it = lines.begin();
+
   while (lines != lines.end ()) //use iterator
    {
     cout << *it << " ";
     ++it;
    unqlines = // how do convert the product of the set to numbers?
-  }
+  } */
   return 0;
 }
