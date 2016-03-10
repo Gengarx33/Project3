@@ -39,7 +39,7 @@ int main()
  int unqlines = 0;
  int numwords = 0;
 
- set <string> numwords, lines;
+ set <string> nmwords, lines;
 
 
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
@@ -58,7 +58,7 @@ int main()
    unqlines = // how do convert the product of the set to numbers?
   }
 
-  numwords += countWords(input, nwords);
+  numwords += countWords(input, nmwords);
 
   return 0;
 }
