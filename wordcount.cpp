@@ -39,10 +39,15 @@ set<string>wl;
  int ULines=0;
  while(getline(cin,line)) {
   numlines++;
-  cout << "Number of lines" << numlines << endl;
+  cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length;
+<<<<<<< HEAD
   cout << "Number of characters" << numchar << endl;
   ULines +=countUnLines(line,wl)
 cout<<"Nubber of uniqueline"<<ULines<<endl;
 	return 0;
+=======
+  cout << "Number of characters " << numchar << endl; //number of characters in each line
+
+  return 0;
 }
