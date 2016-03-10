@@ -43,7 +43,7 @@ int main()
   numlines++; //increments the # of lines everytime it loops
 
   cout << "Number of lines " << numlines << endl; //number of lines
-  numchar += line.length; //counts the characters in each line
+  numchar += line.length(); //counts the characters in each line
   cout << "Number of characters " << numchar << endl; //number of characters in each line
   numwords += countWords(input, nwords);
   return 0;
