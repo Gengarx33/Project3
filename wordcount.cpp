@@ -31,11 +31,10 @@ int main()
 {
  string line;
  int numlines = 0;
-
-
- int unqlines = 0;
+ int numuqline = 0;
  int numwords = 0;
 
+set <string> uqline; //gettting a set for the lines
 
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
   int numchar = 0;
@@ -44,12 +43,10 @@ int main()
   cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length(); //counts the characters in each line
   cout << "Number of characters " << numchar << endl; //number of characters in each line
+  uqline.insert(line); //insert lines to a set
+  cout << "Number of unique lines " << numuqline << endl;
  }
 
- set <string> line; //gettting a set for the lines
- line.insert(line); //insert lines to a set
- line.size ();
-
-
+numuqline = uqline.size();
   return 0;
 }
