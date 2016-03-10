@@ -33,21 +33,13 @@ unsigned long countWords(const string& s, set<string>& wl);
 int main()
 {
   string line;
-set<string>wl;
  int numlines = 0;
  int numchar = 0;
- int ULines=0;
  while(getline(cin,line)) {
   numlines++;
   cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length;
-<<<<<<< HEAD
   cout << "Number of characters" << numchar << endl;
-  ULines +=countUnLines(line,wl)
-cout<<"Nubber of uniqueline"<<ULines<<endl;
-	return 0;
-=======
-  cout << "Number of characters " << numchar << endl; //number of characters in each line
 
   return 0;
 }
