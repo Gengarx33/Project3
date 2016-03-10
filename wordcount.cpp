@@ -46,7 +46,7 @@ int main()
   cout << "Number of characters " << numchar << endl; //number of characters in each line
  }
 
- set <string> line //gettting a set for the lines
+ set <string> line; //gettting a set for the lines
  line.insert(line); //insert lines to a set
  line.size ();
 
