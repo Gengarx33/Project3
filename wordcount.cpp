@@ -32,8 +32,11 @@ int main()
   string line;
 
  int numlines = 0;
+ set <string> lines //gettting a set for the lines
+
  int numchar = 0;
 
+ int unqlines = 0;
  int numwords = 0;
 
  set <string> numwords, lines;
@@ -45,6 +48,17 @@ int main()
   cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length(); //counts the characters in each line
   cout << "Number of characters " << numchar << endl; //number of characters in each line
+
+  lines.insert(lines); //insert lines to a set
+  set <string> it = lines.begin();
+  while (lines != lines.end ()) //use iterator
+   {
+    cout << *it << " ";
+    ++it;
+   unqlines = // how do convert the product of the set to numbers?
+  }
+
   numwords += countWords(input, nwords);
+
   return 0;
 }
