@@ -29,17 +29,12 @@ unsigned long countWords(const string& s, set<string>& wl);
 
 int main()
 {
-  string line;
-
+ string line;
  int numlines = 0;
  set <string> lines //gettting a set for the lines
-
  int numchar = 0;
-
- int unqlines = 0;
+ int unqlines = 0
  int numwords = 0;
-
- set <string> nmwords, lines;
 
 
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
@@ -57,8 +52,5 @@ int main()
     ++it;
    unqlines = // how do convert the product of the set to numbers?
   }
-
-  numwords += countWords(input, nmwords);
-
   return 0;
 }
