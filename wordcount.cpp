@@ -7,9 +7,6 @@
  * NOT mean it is okay to COPY THAT SOURCE.  What you submit here **MUST BE
  * YOUR OWN WORK**.
  * References:
- *
- *
-=======
  *StackOverflow
  *Cpp forums
  *upperclassmen and friends
@@ -35,12 +32,23 @@ int main()
   string line;
  int numlines = 0;
  int numchar = 0;
+
+ int numwords = 0;
+
+ set <string> numwords, lines;
+
+
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
   numlines++; //increments the # of lines everytime it loops
+
   cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length; //counts the characters in each line
   cout << "Number of characters " << numchar << endl; //number of characters in each line
+<<<<<<< HEAD
 
 
+=======
+  numwords += countWords(input, nwords);
+>>>>>>> dcc23358b9255fcce539d520e1fcc67a996d4384
   return 0;
 }
