@@ -31,11 +31,13 @@ int main()
 
  int numlines = 0;
  int numchar = 0;
+ int numwords = 0;
+ set <string> nmwords, lines;
  while(getline(cin,line)) {
   numlines++;
   cout << "Number of lines " << numlines << endl; //number of lines
   numchar += line.length;
   cout << "Number of characters " << numchar << endl; //number of characters in each line
-
+  numwords += countWords(input, nwords);
   return 0;
 }
