@@ -46,16 +46,10 @@ int main()
   cout << "Number of characters " << numchar << endl; //number of characters in each line
  }
 
- // dont touch pls
- /*set <string> lines //gettting a set for the lines
-  lines.insert(lines); //insert lines to a set
-  set <string> it = lines.begin();
+ set <string> line //gettting a set for the lines
+ lines.insert(lines); //insert lines to a set
+ lines.size ();
 
-  while (lines != lines.end ()) //use iterator
-   {
-    cout << *it << " ";
-    ++it;
-   unqlines = // how do convert the product of the set to numbers?
-  } */
+
   return 0;
 }
