@@ -9,11 +9,6 @@
  * References:
  *
  *
-=======
- *StackOverflow
- *Cpp forums
- *upperclassmen and friends
->>>>>>> a47eb45e04eae6840a3a05859f1152d587c1d218
  * Finally, please indicate approximately how many hours you spent on this:
  * #hours:
  */
