@@ -25,7 +25,15 @@ using std::string;
 using std::set;
 
 // write this function to help you out with the computation.VVVV
-//unsigned long countWords(const string& s, set<string>& wl);
+unsigned long countWords(const string& s, set<string>& wl) {
+ int i = 0;
+ for ( int n = 0 ; n < line.length() ; n++ ) {
+  if ( line[n] == ' ' ) {
+   i = n + 1;
+  }
+  }
+}
+
 
 int main()
 {
