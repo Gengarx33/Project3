@@ -27,8 +27,8 @@ using std::set;
 // write this function to help you out with the computation.VVVV
 unsigned long countWords(const string& s, set<string>& wl) {
  int i = 0;
- for ( int n = 0 ; n < line.length() ; n++ ) {
-  if ( line[n] == ' ' ) {
+ for ( int n = 0 ; n < s.length() ; n++ ) {
+  if ( s[n] == ' ' ) {
    i = n + 1;
   }
   }
@@ -43,6 +43,7 @@ int main()
  int numchar = 0;
  int numwords = 0;
 
+set <string> uqwords;
 set <string> uqline; //gettting a set for the lines
 
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
@@ -50,7 +51,7 @@ set <string> uqline; //gettting a set for the lines
   ++numlines; //increments the # of lines everytime it loops
   numchar += line.length(); //counts the characters in each line
   uqline.insert(line); //insert lines to a set
-
+  numwords += countWords(line,uqwords);
  }
  cout << "Number of lines " << numlines << endl; //number of lines
  cout << "Number of characters " << numchar << endl; //number of characters in each line
