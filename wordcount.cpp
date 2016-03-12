@@ -29,7 +29,7 @@ unsigned long countWords(const string& s, set<string>& wl) {
  int i = 0;
  int numwords = 0;
  for ( int n = 0 ; n < s.length() ; n++ ) {
-  if ( s[n] == ' ' ) {
+  if ( (s[n] == ' ' || s[n] == '\t') && s[i] != ' ' )  {
    string t;
    t = s.substr(i,n);
    wl.insert(t); // inserts the words into the set
@@ -41,6 +41,9 @@ unsigned long countWords(const string& s, set<string>& wl) {
    string t;
    t = s.substr(i);
    wl.insert(t); //inserts the last word into the set
+   }
+   else if ( s[i] == ' ' || s[i] == '\t' ) {
+    i++;
    }
   }
   return numwords;
@@ -68,5 +71,6 @@ set <string> uqline; //gettting a set for the lines
 numuqline = uqline.size();
  cout << "Number of unique lines " << numuqline << endl;
  cout << "Number of words " << numwords << endl;
+ cout << "Number of Unique words " << uqwords.size() << endl;
   return 0;
 }
