@@ -12,7 +12,7 @@
  *upperclassmen and friends
 
  * Finally, please indicate approximately how many hours you spent on this:
- * #hours:
+ * #hours: 10 or so, 3 days
  */
 
 #include <iostream>
