@@ -66,11 +66,11 @@ set <string> uqline; //gettting a set for the lines
   uqline.insert(line); //insert lines to a set
   numwords += countWords(line,uqwords);
  }
- cout << "Number of lines " << numlines << endl; //number of lines
- cout << "Number of characters " << numchar << endl; //number of characters in each line
+ cout << numlines << "  "; //lines
 numuqline = uqline.size();
- cout << "Number of unique lines " << numuqline << endl;
- cout << "Number of words " << numwords << endl;
- cout << "Number of Unique words " << uqwords.size() << endl;
+  cout << numwords << "  "; //words
+  cout << numchar << " "; //characters
+ cout << numuqline << " "; //unique lines
+ cout << uqwords.size(); //unique words
   return 0;
 }
