@@ -62,15 +62,11 @@ set <string> uqline; //gettting a set for the lines
 
  while(getline(cin,line)) { //getline turns the paragraph into individual lines; cin,line gets the input from string line, which is the textfile
   ++numlines; //increments the # of lines everytime it loops
-  numchar += line.length(); //counts the characters in each line
+  numchar += line.length() + 1; //counts the characters in each line
   uqline.insert(line); //insert lines to a set
   numwords += countWords(line,uqwords);
  }
- cout << numlines << "  "; //lines
 numuqline = uqline.size();
-  cout << numwords << "  "; //words
-  cout << numchar << " "; //characters
- cout << numuqline << " "; //unique lines
- cout << uqwords.size(); //unique words
+ cout << numlines << '\t' << numwords << '\t' << numchar << '\t' << numuqline << '\t' << uqwords.size() << endl;
   return 0;
 }
